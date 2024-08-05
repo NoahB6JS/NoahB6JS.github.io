@@ -1,32 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Platypi');
-
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Helps with consistent sizing across all elements */
 }
+
 body {
     font-family: 'Platypi';
     text-align: center;
 }
 
-.wrapper{
+.wrapper {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
-header{
+header {
     width: 100%;
     height: 100px;
     background-color: black;
     position: fixed;
-}
-
-.logo{
-    width: 30%;
-    float: left;
-    text-align: left;
-    line-height: 100px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
 }
 
 .logo {
@@ -35,40 +36,85 @@ header{
     font-family: 'Platypi';
     color: white;
     letter-spacing: 4px;
-
 }
 
-nav{
-    float: right;
-    line-height: 100px;
+nav {
+    display: flex;
+    align-items: center;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     font-family: 'Platypi';
     letter-spacing: 4px;
     font-size: 20px;
     color: rgb(92, 92, 92);
     padding: 36px 30px;
-    margin: 0 1px;
+    margin: 0 5px; 
     font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgb(255, 255, 255);
-    
+    color: black; 
 }
 
-.banner-area{
-    background-image: url(images/person.jpg);
-    background-size: cover;
-    background-position: center center;
-    top: 500px;
-    height: 100vh;
+.banner-area h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+.content-area {
+    margin-top: 100px; 
+    padding: 20px;
+    text-align: left;
+}
+
+.content-area h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-area p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.photo-button1 img {
     width: 100%;
-    position: fixed;
+    height: auto;
+    display: block; /* Remove any extra space below the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+.photo-button1 img:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    box-shadow: 0 4px 8px rgba(9, 85, 208, 0.644); /* Add a shadow effect on hover */
+}
+.photo-button1 {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
 }
 
-
-
+.photo-button2 img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove any extra space below the image */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+.photo-button2 img:hover {
+    transform: scale(1.05); /* Slightly increase the size on hover */
+    box-shadow: 0 4px 8px rgba(9, 85, 208, 0.644); /* Add a shadow effect on hover */
+}
+.photo-button2 {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
 
