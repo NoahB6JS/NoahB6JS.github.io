@@ -8,6 +8,7 @@
 body {
     font-family: 'Platypi';
     text-align: center;
+    background-color: rgb(0, 0, 0);
 }
 
 .wrapper {
@@ -82,39 +83,15 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.photo-button1 img {
-    width: 100%;
-    height: auto;
-    display: block; /* Remove any extra space below the image */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
-}
-.photo-button1 img:hover {
-    transform: scale(1.05); /* Slightly increase the size on hover */
-    box-shadow: 0 4px 8px rgba(9, 85, 208, 0.644); /* Add a shadow effect on hover */
-}
-.photo-button1 {
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
+button {
+    padding: 5px;
+    border: 0;
+    background: #000000;
 }
 
-.photo-button2 img {
-    width: 100%;
-    height: auto;
-    display: block; /* Remove any extra space below the image */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
-}
-.photo-button2 img:hover {
-    transform: scale(1.05); /* Slightly increase the size on hover */
-    box-shadow: 0 4px 8px rgba(9, 85, 208, 0.644); /* Add a shadow effect on hover */
-}
-.photo-button2 {
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-}
 
+
+.img-size img {
+    width: 500px;
+    height: 800px;
+}
